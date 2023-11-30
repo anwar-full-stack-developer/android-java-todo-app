@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="20dp"
+    tools:context=".ui.todo.NewTodoActivity">
+
+    <EditText
+        android:id="@+id/idEdtTodoTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:maxLines="4"
+        android:lines="4"
+        android:hint="Task Name" />
+
+
+    <RadioGroup
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonPending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonInProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="InProgress" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completed" />
+
+    </RadioGroup>
+<!--    <EditText-->
+<!--        android:id="@+id/idEdtTodoStatus"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:hint="Status" />-->
+
+
+    <EditText
+        android:id="@+id/idEdtTodoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:hint="Details" />
+
+
+    <Button
+        android:id="@+id/idBtnSaveTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:minHeight="48dp"
+        android:text="Save your Todo"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
